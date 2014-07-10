@@ -1,0 +1,11 @@
+{
+  "name": "upgreat-tcp",
+  "version": "0.1.0",
+  "description": "Upgrade from HTTP to TCP socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Omar Kjartan Yasin",
+  "license": "MIT"
+}
