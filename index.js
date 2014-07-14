@@ -55,7 +55,8 @@ var _client_handshake = function(socket, opts, maybe_callback) {
 
 var _create_response = function() {
     return ['HTTP/1.1 101 Switching Protocols',
-            'upgrade: upgreat-tcp'].join('\r\n') + '\r\n\r\n';
+            'upgrade: upgreat-tcp',
+            'connection: upgrade'].join('\r\n') + '\r\n\r\n';
 }
 
 var _create_request = function(opts) {
