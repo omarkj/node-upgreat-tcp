@@ -35,7 +35,7 @@ var _client_handshake = function(socket, opts, maybe_callback) {
         socket.write(_create_request(opts));
         socket.removeListener('connect', arguments.callee);
     }).on('data', function(data) {
-        if (data.toString() === _create_response()) {
+        if (data.toString().toLowerCase() === _create_response().toLowerCase()) {
             if (typeof maybe_callback === 'function') {
                 maybe_callback(socket);
             }
